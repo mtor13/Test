@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebAppTest.Models.ActividadesModel>
+
+<br />
+<br />
+<table class="table">
+    <tdead>
+        <tr>
+            <th>Fecha Actividad</th>
+            <th>Nombre Completo</th>            
+            <th>Detalle Actividad</th>
+        </tr>
+    </tdead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CreateDate</td>
+                <td>@item.IdUsuario</td>
+                <td>@item.Actividad</td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
